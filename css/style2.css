@@ -1,0 +1,309 @@
+    /* обнуляем все элементы */
+    {
+      margin: 0;
+      padding: 0;
+      outline: none;
+    }
+
+    /* --- Общие стили --- */
+
+    html {
+      font-size: 75%;
+      height: 100%;
+    }
+
+    body {
+      font: normal 1em/1.3 arial, helvetica, sans-serif;
+      color: #333;
+      height: 100%;
+      background: #f0f0f0;
+    }
+
+    a {
+      color: #2b82dc;
+    }
+
+    aside:hover a,
+    footer:hover a,
+    p:hover a {
+      color: #0E6994;
+    }
+
+    a:hover {
+      text-decoration: none;
+      color: #0E6994;
+    }
+
+    abbr {
+      border-bottom: 1px dotted #2b82dc;
+      cursor: help;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-weight: normal;
+      line-height: 1;
+      margin: 4px 0 12px;
+      padding: 4px;
+      color: #2ca9e4;
+    }
+
+    h1 {
+      font-size: 3em;
+      text-align: center;
+      padding-top: 80px;
+      padding-left: 450px;
+      color: #090974;
+    }
+    h3{
+     color: #2b82dc;
+     font-weight: bolder;
+    }
+
+    h2+a {
+      margin-bottom: 10px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    p {
+      text-align: justify;
+      word-spacing: .1ex;
+      line-height: 1.6;
+      padding-left: 4px;
+      margin-bottom: 1em;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 4px;
+    }
+    }
+
+    ol {
+      list-style-position: inside;
+      padding-left: 4px;
+    }
+
+    .video {
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    summary {
+      margin-left: 1em;
+      font-weight: bold;
+      color: #2ca9e4;
+    }
+
+    form {
+      margin: 1em;
+      padding: .5em;
+    }
+
+    input[id=contact_name] {
+      padding-left: 5px;
+      margin-left: 20px;
+    }
+
+    input[id=contact_name2] {
+      padding-left: 5px;
+      margin-left: 20px;
+    }
+
+    input[id=contact_email] {
+      padding-left: 5px;
+      margin-left: 20px;
+    }
+
+    input[id=contact_phone] {
+      padding-left: 5px;
+      margin-left: 20px;
+    }
+
+    input[type=submit] {
+      border-radius: 10px;
+      color: #2ca9e4;
+      padding: 0.5em;
+      margin-left: 2em;
+    }
+
+    /* делаем семантические тэги - блочными */
+    header,
+    nav,
+    section,
+    article,
+    aside,
+    footer {
+      display: block;
+      position: relative;
+    }
+
+    /* выравниваем страницу по центру, делаем отступы и цвет фона */
+    main {
+      width: 950px;
+      min-height: 100%;
+      padding: 0 24px;
+      margin: 0 auto;
+      background: #fff url(../images/imeg2.png) center center no-repeat;
+    }
+
+    /* пишем класс для шапки - header */
+    .h {
+      overflow: hidden;
+      height: 210px;
+      padding: 0;
+      text-align: left;
+      margin-bottom: 40px;
+    }
+
+    /* меню навигации */
+    nav {
+      width: 33%;
+      margin-left: 0;
+      margin-right: 0;
+      display: block;
+      /* border-radius:20px;*/
+    }
+    nav a {
+      font-weight: bold;
+      font-size: 25pt;
+      text-decoration: none;
+      color: rgb(0, 0, 0);
+      text-align: center;
+      padding-top: 30px;
+      width: 100%;
+      float: left;
+      margin: 0px 10px 0px 20px;
+      border: 0;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+      color: #412C84;
+    }
+
+    /* область основного контента */
+    section {
+      overflow: hidden;
+      margin-top: 35px;
+    }
+
+    /* стиль для картинки */
+    .image {
+      width: 200px;
+      margin: 10px 0;
+      float: left;
+      padding-left: 130px;
+    }
+
+    figure {
+      padding: 10px;
+      /* Поля вокруг */
+      display: block;
+      /* Блочный элемент */
+      width: 550px;
+      /* Ширина */
+      margin: 0 10px 10px 0;
+      /* Отступы */
+      text-align: center;
+      /* Выравнивание по центру */
+    }
+
+    figcaption {
+      color: #2ca9e4;
+      /* Цвет текста */
+      font-size: 1.2em;
+    }
+
+    mark {
+      background: #ffec82;
+      padding: 1px 3px;
+      border: 1px dashed #333;
+    }
+
+    /* внутренняя область контента */
+    section section {
+      float: left;
+      width: 100%;
+      margin-top: 0;
+    }
+
+    /* правая часть */
+    aside {
+      overflow: hidden;
+      width: 40%;
+      padding: 0 15px;
+    }
+
+    /* нижняя часть - footer */
+    footer {
+      height: 40px;
+      padding: 25px 25px 0;
+      margin: 20px 0 0;
+      border-top: 1px solid #0E6994;
+    }
+
+    /* стили для выделения областей HTML */
+    .tag {
+      position: absolute;
+      right: 6px;
+      top: 2px;
+      font-size: 11px;
+      font-style: normal;
+    }
+
+    header:hover,
+    nav:hover,
+    section:hover,
+    article:hover,
+    aside:hover,
+    footer:hover {
+    background: #032f332f;
+
+      color: #fff;
+    }
+
+    section section:hover,
+    section aside:hover {
+    background: #032f332f;
+
+    }
+
+    section article:hover {
+      background: #032f332f;
+
+    }
+
+    article header:hover {
+      background: #032f332f;
+      color: #777;
+    }
+
+    section article .tag {
+      top: 12px;
+    }
+
+    article header .tag {
+      right: 70px;
+      top: 2px;
+    }
+
+    aside .tag {
+      top: 12px;
+    }
+    .nav{
+      font-size: 0;
+      padding: 0;
+      margin: 0;
+    }
+    .veb{
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
